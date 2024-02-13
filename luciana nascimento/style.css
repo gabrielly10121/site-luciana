@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Nanum+Myeongjo&family=Roboto');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+    --white:var(--white) #fafdea;
+    --green:var(--green) #a3d369ff;
+    --black:var(--black) #232323;
+    --pink:var(--pink) #f8abbf;
+    --rose:var(--rose) #edccd3;
+    --yellow:var(--yellow) #feeb8f;
+
+}
+
+body{
+    background-color: #a3d369ff;
+    height: 100vh;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    background-color:#edccd3;
+    min-height: 50px;
+}
+
+.box-img-header{
+    height: 100%;
+}
+.img-logo{
+    max-width: 60px;
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #232323;
+}
+
+.nav-link:hover{
+    
+    color: #feeb8f;
+    transition: .4s;
+    text-decoration: underline;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section{
+    padding: 4rem;
+}
+
+.first-section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 650px;
+    
+}
+
+.first-section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+    
+}
+h1{
+    font-size: 4rem;
+    color: #fafdea;
+    letter-spacing: 8px;
+    flex-wrap: wrap;
+}
+
+strong{
+    color: #fafdea;
+    
+}
+
+.text-like{
+    text-decoration: none;
+    color: #fafdea;
+}
+
+.first-section p{
+    color: #fafdea;
+}
+
+.link-saber-mais{
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+    background-color: transparent;
+    border: 1px solid #fafdea;
+    color: #fafdea; 
+    text-decoration: none;
+    width: 150px;
+    text-align: center;
+}
+
+.link-saber-mais:hover{
+   background-color: #edccd3; 
+   border: 1px solid #f8abbf;
+}
+
+.box-img-main{
+    max-width: 450px;
+    padding: 1rem;
+}
+
+.img-profile{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.second-section{
+    background-color: #edccd3;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.second-section ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.second-section ul li{
+    color: #232323;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.second-section ul li:hover{
+    color: #feeb8f;
+    transition: .4s;
+    cursor: default;
+}
+
+.title{
+    color: #232323;
+}
+.title-suporte{
+    color: #fafdea;
+}
+
+.third-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.third-section > div{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.third-section > div img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.third-section > div p{
+    max-width: 600px;
+    color: #fafdea;
+    text-align: justify;
+}
+
+.fourth-section{
+    background-color: #edccd3;
+    flex-wrap: wrap;
+    gap: 8rem;
+    letter-spacing: 2px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #232323;
+ 
+}
+
+.fourth-section img{
+    border-radius: 80px;
+    width: 300px;
+    flex-wrap: wrap;
+    gap: 4rem;
+    
+   
+}
+footer{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fafdea;
+}
+.box-footer a{
+    text-decoration: none;
+}
+
+.box-footer a strong:hover{
+    color: #feeb8f;
+    transition: .4s;
+    cursor: default;
+  
+}
+
+footer > div{
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
+@media(max-width:991px){
+
+    html{
+        font-size: 55%;
+        
+    }
+       
+    header{
+        padding:2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+}
+
+@media(max-width:280px){
+
+    html{
+        font-size: 10px;
+        
+    }
+       
+    header{
+        padding:2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+}
+
+
